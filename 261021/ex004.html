@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 버튼</title>
+    <style>
+        table {
+            border:0;
+        }
+        td {
+            padding: 5px 10px;
+            border:0;
+            vertical-align: middle;
+        }
+
+        span {
+            font-size: 1em;
+            /* font-weight: bold; */
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label><span>아이디</span> <input type="text" size="15"></label></td>
+                <td><label><span>비밀번호</span> <input type="password" size="15"></label></td>
+                <td><input type="image" id="butt" src="images/login.jpg" width="80" height="70" alt="login" onclick="submit()"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

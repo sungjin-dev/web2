@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        fieldset {
+            text-align: center;
+            background-color: azure;
+            margin-left: 20px;
+        }
+        legend {
+            font-size: 1.2em;
+            text-align: left;
+        }
+        #cal_container {
+            display: flex;
+        }
+
+        .cal_img img{
+            padding-left: 70px;
+            display: inline;
+            cursor: pointer;
+        }
+
+        form {
+            margin: 25px;
+        }
+
+        span {
+            padding: 0 10px 0 10px; 
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-left: 50px;
+        }
+
+
+        .cal_img img:hover {
+            width: 700px;
+            height: 700px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>유용한 툴</h1>
+    <fieldset>
+        <legend><strong>계산기</strong></legend>
+        <div id="cal_container">
+            <div class="cal">
+                <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+                <input type="number" name="num1" value="0">
+                <span>+</span><input type="number" name="num2" value="0">
+                <span>=</span><output name="result" for="num"></output>
+                </form>
+                <form oninput="result.value=parseInt(num1.value)-parseInt(num2.value)">
+                    <input type="number" name="num1" value="0">
+                    <span>-</span><input type="number" name="num2" value="0">
+                    <span>=</span><output name="result" for="num"></output>
+                </form>
+                <form oninput="result.value=parseInt(num1.value)/parseInt(num2.value)">
+                    <input type="number" name="num1" value="0">
+                    <span>/</span><input type="number" name="num2" value="0">
+                    <span>=</span><output name="result" for="num"></output>
+                </form>
+                <form oninput="result.value=parseInt(num1.value)*parseInt(num2.value)">
+                    <input type="number" name="num1" value="0">
+                    <span>*</span><input type="number" name="num2" value="0">
+                    <span>=</span><output name="result" for="num"></output>
+                </form>
+                <form oninput="result.value=parseInt(num1.value)^parseInt(num2.value)">
+                    <input type="number" name="num1" value="0">
+                    <span>^</span><input type="number" name="num2" value="0">
+                    <span>=</span><output name="result" for="num"></output>
+                </form>
+                <form oninput="result.value=parseInt(num1.value)>>parseInt(num2.value)">
+                    <input type="number" name="num1" value="0">
+                    <span>>></span><input type="number" name="num2" value="0">
+                    <span>=</span><output name="result" for="num"></output>
+                </form>
+                <form oninput="result.value=parseInt(num1.value)%parseInt(num2.value)">
+                    <input type="number" name="num1" value="0">
+                    <span>%</span><input type="number" name="num2" value="0">
+                    <span>=</span><output name="result" for="num"></output>
+                </form>
+            </div>
+            <div class="cal_img">
+                <img src="images/cal.jpg" width="300" height="300" alt="cal_imgs">
+            </div>
+        </div> 
+    </fieldset>
+</body>
+</html>

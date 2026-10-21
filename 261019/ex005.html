@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표 만들기</title>
+    <style>
+        table, th, td {
+            border: 2px solid #ccc;
+        }
+
+        td {
+            padding: 25px; 
+            color:blue;
+        }
+
+        #temp {
+            color:brown;
+            padding: 75px;
+            text-decoration: underline;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>제목 셀</th>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <th>제목 셀</th>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td id="temp">temp</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+        </tr>
+        <tr>
+            <td>4행 1열</td>
+            <td>4행 2열</td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>

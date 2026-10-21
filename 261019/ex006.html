@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>표 만들기</title>
+    <style>
+
+        #wrap {
+            margin: 50px;
+            border: 5px solid #dadada;
+            padding: 25px;
+        }
+
+        table {
+            width:100%;
+        }
+
+        .tab1 {
+             text-align: center;
+        }
+
+        .profile {
+            table-layout: fixed;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            margin:auto;
+            margin-top: 50px;
+        }
+
+        .profile th {
+            width:20px;
+        }
+ 
+        table, th, td {
+            border:1px solid #ccc;
+        }
+
+        th {
+            padding:15px;
+
+        }
+        tr > td:nth-child(odd) {
+            width: 120px;
+        }
+
+        tr > td:nth-child(even) {
+            width: 300px;
+        }
+
+        ul {
+            line-height: 25px;
+        }
+
+        a {
+            text-decoration: solid;
+            text-decoration: underline;
+            color:blueviolet;
+        }
+
+        #university {
+            color:brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>자기소개</h1>
+    <div id="wrap">
+        
+        <div>
+            <h2>인적사항</h2>
+            <hr>
+            <br>
+        </div>
+        <div class="tab1">
+            <table class="인적사항">
+                <tr>
+                    <th>이름</th>
+                    <td>박성진</td>
+                    <th>연락처</th>
+                    <td><mark>010-1234-5678</mark></td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td colspan="3"><em>대전 서구 둔산 그린아트컴퓨터</em></td>
+                </tr>
+                <tr>    
+                    <th>자기소개</th>
+                    <td colspan="3">산대특 수업 듣기</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab2">
+            <h2>Profile</h2>
+            <hr>
+            <br>
+            <div>
+                <table class="profile">
+                    <tr>
+                        <th>Who am I</th>
+                        <td>
+                            <ul>
+                                <li>프런트엔드 웹 기술(Front-end Web Tech.)에 관심있습니다.</li>
+                                <li>현재 <span style="color:blue">대전 중구의 한 마을</span>에서 코딩 중입니다.</li>
+                            </ul>     
+                </td>
+                    </tr>
+                    <tr>
+                        <th>Experience</th>
+                        <td>
+                            <ul>
+                                <li><a>프론트엔드 개발</a>
+                                    <ol type="a" start="1">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JAVASCRIPT</li>
+                                    </ol>
+                                </li>
+                                <br>
+                                <li><a>백엔드 개발</a>
+                                    <ol type="a">
+                                        <li>PYTHON</li>
+                                        <li>JAVA</li>
+                                        <li>SPRING</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Skills</th>
+                        <td>
+                            <pre>
+                                •기본형:<pre>텍스트</pre>
+                                •소스에표시한공백이그대로표시됨.
+                                •프로그램소스를표시할때유용함.
+
+                                <strong> 중요한 내용이라서 강조해야할때
+                                <em> 흐름상특정부분을강조하고싶을때
+                                <hr> 수평줄생김
+                                <blockquote>태그–인용문넣기
+
+                            </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Education</th>
+                        <td>
+                            <ul>
+                                <li><a id="university">MIT 컴퓨터 공학과 졸업</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
