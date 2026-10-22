@@ -1,0 +1,90 @@
+* {
+    margin: 20px auto;
+    padding: 0;
+}
+
+#wrap {
+    width: 600px;
+    padding: 15px;
+    border: 1px dotted grey;
+    background-color: blanchedalmond;
+}
+
+p{
+    font-size:0.9em;
+    line-height: 2.0; /* 줄간격 */
+    padding : 5px;
+}
+
+.bluetext {
+    color: blue;
+}
+
+h2.accent {
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+}
+
+/* class="browntext boldtext" */
+
+
+
+.browntext {
+    color: brown;     /* class="a b" 일 때 a따로 b따로 적용가능 */
+}
+.boldtext {
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+}
+
+img {
+    padding:0 5px;
+    margin-left: 25px;
+}
+
+figcaption {
+    margin-top: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+fieldset {
+    background-color:#fff;
+}
+
+li {
+    list-style: none;
+}
+
+legend {
+    background-color:honeydew;
+    border: 1px solid #242424;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+label {
+    margin-left: 50px;
+}
+
+span {
+    margin-left: 50px;
+}
+
+form label.reg {
+    float:left;
+    width: 150px;
+}

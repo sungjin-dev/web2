@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px double black;
+            margin-bottom: 20px;
+        }
+        .bg1 {
+            background: url(images/back.jpg) no-repeat right bottom;
+            background-size: auto;
+        }
+        .bg2 {
+            background: url(images/back.jpg) no-repeat left bottom;
+            background-size: 200px 150px;
+        }
+        .bg3 {
+            background: url(images/back.jpg) no-repeat right top;
+            background-size: 60% 40%;
+        }
+        .bg4 {
+            background: url(images/back.jpg) no-repeat left top;
+            background-size: contain;
+        }
+        .bg5 {
+            background: url(images/back.jpg) no-repeat left top;
+            background-size: cover;
+        }
+        .bg6 {
+            background: url(images/back.jpg) no-repeat left top;
+            background-size: 100% 100%;
+        }
+
+        #container1, #container2 {
+            display: flex;
+            width: 1500px;
+        }
+
+        p {
+            font-size: bold;
+            font-size: 1.5em;
+            text-align:end;
+            color:darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div class="bg1">
+            <p>background-size: auto</p>
+            <p><strong><mark>기준점을 우측하단으로</mark></strong></p>
+        </div> 
+        <div class="bg2">
+            <p>background-size: 200px 150px</p>
+        </div> 
+        <div class="bg3">
+            <p>background-size: 60% 40%</p>
+            <p><strong><mark>기준점을 우측상단으로</mark></strong></p>
+        </div> 
+    </div>
+    <div id="container2">
+        <div class="bg4">
+            <p>background-size: contain</p>
+        </div> 
+        <div class="bg5">
+            <p>background-size: cover;</p>
+            <p><strong><mark>비율을 유지한다</mark></strong></p>
+        </div> 
+        <div class="bg6">
+            <p>background-size: 100% 100%</p>
+            <p><strong><mark>비율이 깨진다</mark></strong></p>
+        </div> 
+    </div>
+   
+</body>
+</html>
