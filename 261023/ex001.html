@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img_div {
+            background-image:url(images/astronaut.jpg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: cover;
+        }
+        div {
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        #container {
+            display: flex;
+            width: 1200px;
+        }
+        h1 {
+            margin: 0 110px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>우주 비행</h1>
+    <div id="container">
+        <div>
+            <h2>비공개키 대칭</h2>
+            <p> • 1999년 한국인터넷진흥원(KISA)에서 개발한 블록 암호화 알고리즘<br>
+                • 블록 크기는 128비트이며, 키 길이에 따라 128, 256으로 분류됨<br>
+                2004년 국가정보원과 산학연협회가 개발한 블록 암호화 알고리즘
+                • 1974년 IBM이 개발하고 1975년 미국 NBS에서 국가표준으로 발표한 개인키 
+                암호화 알고리즘
+                • 블록 크기는 64비트, 키 길이는 56비트이며 16회의 라운드를 수행함
+                • DES를 3번 적용하여 보안을 더욱 강화한 3DES(Triple DES)도 있음
+                • 2001년 미국 표준 기술 연구소(NIST)에서 발표한 개인키 암호화 알고리즘
+                • DES의 한계를 느낀 NIST에서 공모한 후 발표
+                • 블록 크기는 128비트이며, 키 길이에 따라 AES-128, AES-192, AES-256으로 분류됨
+                • 1978년 MIT의 라이베스트(Rivest), 샤미르(Shamir), 애들먼(Adleman)에 의해 제안된 공개키 암호화 알고리즘</p>
+            <p>• 큰 숫자를 소인수분해 하기 어렵다는 것에 기반하여 만들어짐 (공개키-비대칭)
+            <h2>공개키 비대칭</h2>
+            <p>
+                • 1985년 RSA 암호 방식의 대안으로 제안됨  (공개키-비대칭)
+                • 이산대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘
+                • 스위스의 라이(Lai)와 메시(Massey)가 1990년에 개발한 PES를 개선한 알고리즘
+                • 블록 크기는 64비트이고, 키 길이는 128비트임
+                • 국가안전보장국(NSA)에서 개발한 암호화 알고리즘
+                • 클리퍼 칩(Clipper Chip)이라는 IC 칩에 내장되어 있음
+                • 블록 크기는 64비트이고, 키 길이는 80비트임
+                • 주로 음성 통신 장비에 삽입되어 음성 데이터를 암호화함
+                • 무선랜 보안에 사용된 WEP을 보완한 데이터 보안 프로토콜로, 임시 키 무결성
+                 프로토콜이라고도 함
+                • WEP의 취약성을 보완하기 위해 암호 알고리즘의 입력 키 길이를 128비트로 늘리고 패킷당 키 할당, 키값 재설정 등 키 관리 방식을 개선하였음
+            </p>
+        </div>
+        <div class="img_div">
+        </div>
+    </div>
+</body>
+</html>
