@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Asta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    font: 14px 맑은 고딕;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+}
+
+header {
+    position:relative;
+    height: 280px;
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
+header h1 {
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    font-size: 3em;
+    color: #ffc;
+    text-shadow: 1px 2px 2px #000;
+}
+
+header h2 {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 2em;
+    color:darkgreen;
+    text-shadow: 0px 1px 1px #ffc;
+}
+
+.navi {
+    background-color: darkgrey;
+    text-align: center;
+}
+
+.navi ul {
+    list-style: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navi ul li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.navi a, .navi a:visited {
+    padding: 10px 5px 5px 35px;
+    display: block;
+    color: #fff;
+    width: 150px;
+    text-decoration: none;
+}
+
+.navi a:hover, .navi a:active, .navi a:focus {
+    text-shadow: 0px 2px 2px #000;
+    color: #ffc;
+}
+
+section, footer, aside, article, figure {
+    display: block;
+}
+
+.content {
+    margin:15px;
+    padding: 25px;
+    width: 700px;
+    float: left;
+}
+
+h2, h3 {
+    color: darkcyan;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 1.1em;
+    margin : 10px 0 ;
+    padding: 5px 0;
+}
+
+.sidebar {
+    float: right;
+    width: 400px;
+    height: 450px;
+    background-color: aliceblue;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    clear: both;
+}
+
+.banner {
+    margin: 0 10px 15px 10px;
+    padding: 0;
+}
+
+.sidebar img {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    text-align: center;
+    width: 380px;
+}
+
+.sidebar img:hover {
+    border: 1px solid #000;
+    opacity: 1.0
+}
+
+
+.video {
+   float: left;
+   margin-top: 70px;
+   margin-left: 50px;
+}
+
+video {
+    width: 300px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:disabled {
+            background: #ddd;
+            border:1px #ccc solid;
+        }
+
+        input:checked + span {   /* 조건문 형태 상태 조건 checked  */
+            color: blue;         /* input뒤에 span이 바로 나란히 있어서 가능 */
+        }
+    </style>
+</head>
+<body>
+    <p>이 달에 신청할 과목을 선택하세요</p>
+    <label>
+        <input type="radio" name="subject" value="speaking"><span>회화</span>
+    </label>
+    <label>
+        <input type="radio" name="subject" value="speaking"><span>문법</span>
+    </label>
+    <label>
+        <input type="radio" name="subject" value="speaking"><span>작문</span>
+    </label>
+</body>
+</html>
