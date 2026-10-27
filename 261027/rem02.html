@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            width: 96%;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+        .header-text {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .fluid-text {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+        <picture>
+            <source srcset="images/1.jpg" media="(min-width:1024px)">
+            <source srcset="images/2.jpg" media="(min-width:768px)">
+            <source srcset="images/3.jpg" media="(min-width:320px)">
+            <img src="images/fill.jpg" alt="fill with coffee" style="width: 100%;">
+        </picture>
+        <div id="wrapper">
+            <header class="header-text">
+                <p>가변 그리드 레이아웃</p>
+                <p class="fluid-text">가변 폰트</p>
+            </header>
+            <section class="content">
+                <h4>본문</h4>
+            </section>
+        </div>
+</body>
+</html>
