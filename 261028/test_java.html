@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        p {
+            font-size: 3em;
+            color: blue;
+            text-align: center;
+            margin: auto;
+            margin-top: 300px;
+        }
+    </style>
+    <script>
+        var num1 = prompt("첫번째 숫자를 입력하세요!", "0")
+        var num2 = prompt("두번째 숫자를 입력하세요!", "0")
+
+        var int_num1 = parseInt(num1)
+        var int_num2 = parseInt(num2)
+
+        var cal = prompt("+,-,/* \ 원하는 사칙연산을 선택해주세요!")
+        var result;
+
+        switch(cal) {
+            case "+": result = int_num1 + int_num2;
+            break;
+            case "-": result = int_num1 - int_num2;
+            break;
+            case "/": result = int_num1 / int_num2;
+            break;
+            case "*": result = int_num1 * int_num2;
+            break;
+            default: alert("보기 중에 없는 연산입니다.");
+        }
+        document.write("연산결과= " + "<p>"+ result+"</p>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

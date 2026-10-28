@@ -1,0 +1,180 @@
+* {
+    margin:0;
+    padding:0
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+fieldset {
+    background-color:beige;
+    margin: 10px 0;
+}
+
+#web_retreat {
+    font-size: 1.3em;
+    padding-right: 50px;
+}
+
+body {
+    font: 14px 맑은 고딕;
+    background-color: bisque;
+}
+
+header {
+    position:relative;
+    height: 150px;
+    background-image: url('../images/1440px.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
+tr, td, th {
+    border: 1px solid #000;
+}
+
+th {
+    background-color: bisque;
+}
+
+#field_container1, #field_container3, #field_container2, #mini_container, #last_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.half {
+    width: 45%;
+}
+
+.third {
+    width:120px;
+    padding: 5px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.content {
+    width: 280px;
+    height: 620px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px 0; 
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+}
+
+.navi li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 5px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+    list-style-type:square;
+}
+
+.navi {
+    background-color: #000;
+}
+
+p {
+    font-size: 1.1em;
+    margin : 10px;
+    padding: 5px 0;
+
+}
+
+#hard {
+    background-color: darkblue;
+    width: 49%;
+    line-height: 40px;
+    text-align: center;
+}
+#smooth {
+    background-color: blue;
+    width: 49%;
+    line-height: 40px;
+    text-align: center;
+}
+
+textarea {
+    margin: 10px;
+}
+
+table {
+    height: 400px;
+}
+
+.broad {
+    width: 280px;
+}
+
+#mini_container, #field_container2 {
+    align-items: center;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    padding: 5px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#third_art {
+    width: 450px !important;
+}
+
+#left {
+    text-align: left;
+}
+
+h1, h2, h3 {
+    margin:5px 0;
+}
+
+#first_content {
+    line-height: 2;
+}
+
+#html_ul {
+    margin-left: 20px;
+}
+.test {
+    padding: 5px;
+}
+
+@media screen and (min-width:768px) {
+    #content_container {
+        display: inline-table;
+    }
+}
