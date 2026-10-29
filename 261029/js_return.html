@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin:0;
+            padding:0;
+        }
+        #galleryZone {text-align: center;}
+        #galleryZone input[type="image"] {
+            margin: 0 8px;
+        }
+    </style>
+    <script>
+       var num = 1;
+       function gallery(direct) {
+        if(direct) {
+            if(num==8) return;
+            num++;
+        } else {
+            if(num==1) return;
+            num--;
+        }
+
+        var imgtag = document.getElementById("photo");
+        imgtag.setAttribute("src","images/pic-" +num+".jpg");
+       }
+       
+    </script>
+</head>
+<body>
+    <div id="galleryZone">
+        <p>
+          <img src="images/pic-1.jpg" id="photo" alt="" width="500" height="800">  
+        </p>
+        <p>
+            <button onclick="gallery(0)">이전</button>
+            <button onclick="gallery(1)">다음</button>
+        </p>
+    </div>
+</body>
+</html>

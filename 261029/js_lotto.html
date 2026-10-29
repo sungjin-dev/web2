@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h1>로또 생성기</h1>");
+
+        var input_num;
+
+        for (var i=1; i<=6; i++){
+            while (i<7) {
+                input_num = prompt("순서대로 숫자를 입력하세요", "1~45");
+                result += input_num
+            } 
+        }; 
+
+        var my_lotto_num = result
+        document.write("my_lotto_num")
+
+        var com_num;
+
+        for (var i=1; i<=6; i++){
+            while (i<7) {
+                com_num = Math.ceil(Math.random()*45)
+                result += com_num
+            } 
+        }; 
+
+        var lottery_num = result
+        document.write("lottery_num")
+
+        if(my_lotto_num == lottery_num) {
+
+            document.write("<img src=\"images/win.jpg\">");
+
+        } else {
+            document.write("<img src=\"images/lose.jpg\">");
+        };
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
