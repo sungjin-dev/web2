@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <script>
+        var number = '100';
+        alert(parseInt(number,2)); // 4
+        alert(parseInt(number,8)); // 64
+        alert(parseInt(number,10)); // 100
+        alert(parseInt(number,16)); // 256
+
+        var number = '52.273e5';
+        alert(parseFloat(number)); // 5227300
+
+        var number = "일";
+
+        if (isNaN(number) == true) {
+            alert("숫자가 아닙니다");
+        } else {
+            alert("숫자 입니다");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

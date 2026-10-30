@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        function addImage(){
+            $(".class1").html("<img src='../images/pic-1.jpg'>");
+        }
+
+        function fn_process(){
+            var value = $("#t_input").val();
+            $("#t_output").val(value)
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="class1">
+    </div>
+    <div class="class1">
+    </div>
+    <input type="button" value="이미지 추가하기" onclick="addImage()" />
+
+    <input type="text" id="t_input" />
+    <input type="button" value="입력하기" onclick="fn_process()" /> <br><br>
+    <div>
+        결과 : <br>
+        <input type="text" id="t_output" disabled/>
+
+    </div>
+
+</body>
+</html>
