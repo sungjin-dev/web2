@@ -8,8 +8,61 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    <style>
+        a {
+            text-decoration: none;
+            color:black;
+            margin: 5px;
+            text-align:justify;
+            padding: 7px;
+        }
+
+        #title {
+            padding:0 30px;
+            font-style:italic;
+            font-size:1.3em;
+        }
+
+        #foot {
+            text-align:center;
+        }
+
+
+        #image1, #image2, #image3 {
+            max-width: 30%;
+            min-width: 30%;
+            max-height: fit-content;
+        }
+
+        .d-block {
+            width: 700px;
+            height: 300px;
+        }
+
+    </style>
+
     <script>
-    
+
+        $(function( ) {
+            const original_text = $('#car-description1').text();
+            console.log(original_text);
+
+            $("#car1-link").on('mouseover', function () {
+            $("#car-description1").text("이제 좀 바껴라");
+            // console.log(text());
+            });
+
+            $("#car3-link").on('mouseout', function () {
+            $("#car-description3").text(original_text);
+            });   
+        });  
+
+        $(function(){
+            $("#rel_site").on("change", function(){
+                $(".txt").text($(this).val());
+            });
+        })
+                
     </script>
 
 </head>
@@ -19,7 +72,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">최고의 스포츠카</a>
+                <a class="navbar-brand" href="#" id="title"><strong>Greatest Cars of All Time</strong></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,28 +88,31 @@
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#" >Information</a>
                 </li>
                 </ul>
-            </div>
+                </div>
         </nav>
     </header>
    </div>
-        <div style="width: 95%; height: 20%; margin: 40px auto;" background-size: cover;>
+        <div style="width: 95%; height: 20%; margin: 2% auto;" background-size: cover;>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/slide1.jpg" class="d-block w-100" alt="" width="60%" height="50%">
+                        <img src="images/slide1.jpg" class="d-block w-100" alt="">
                     </div>
-                <div class="carousel-item">
-                    <img src="images/slide2.jpg" class="d-block w-100" alt="" width="60%" height="50%">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slide3.jpg" class="d-block w-100" alt="" width="60%" height="50%">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slide4.jpg" class="d-block w-100" alt="" width="60%" height="50%">
-                </div>
+                    <div class="carousel-item">
+                        <img src="images/slide2.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide3.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide4.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide5.jpg" class="d-block w-100" alt="">
+                    </div>
             </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -69,21 +125,21 @@
             </div>
         </div>
        <div class="d-flex justify-content-evenly text-center">
-            <div class="d-flex flex-column align-items-center" style="width: 30%;">
-                <img src="images/car1.jpg" class="img-fluid" alt="">
-                <a href="#" class="mt-2" id="car1-link">Jaguar E-TYPE (1963)</a>
+            <div class="d-flex flex-column align-items-center" id="image1">
+                <img src="images/car1.jpg" class="img-fluid" alt="" id="car1-link">
+                <a href="#" class="mt-2" id="#car-description1"><strong>Jaguar E-TYPE (1963)</strong> : The Jaguar E-Type, or the Jaguar XK-E for the North American market, is a British front-engined sports car that was manufactured by Jaguar Cars Ltd from 1961 to 1974.</a>
             </div>
-            <div class="d-flex flex-column align-items-center" style="width: 30%;">
-                <img src="images/car2.jpg" class="img-fluid" alt="">
-                <a href="#" class="mt-2" id="car2-link">Lamborghini MIURA (1966)</a>
+            <div class="d-flex flex-column align-items-center" id="image2">
+                <img src="images/car2.jpg" class="img-fluid" alt="" id="car2-link">
+                <a href="#" class="mt-2" id="#car-description2"><strong>Lamborghini MIURA (1966)</strong> : The Lamborghini Miura is a sports car produced by Italian automaker Lamborghini between 1966 and 1973.</a>
             </div>
-            <div class="d-flex flex-column align-items-center" style="width: 30%;">
-                <img src="images/car3.jpg" class="img-fluid" alt="">
-                <a href="#" class="mt-2" id="car3-link">Aston Martin Valhalla</a>
+            <div class="d-flex flex-column align-items-center" id="image3">
+                <img src="images/car3.jpg" class="img-fluid" alt="" id="car3-link">
+                <a href="#" class="mt-2" id="#car-description3" ><strong>Aston Martin Valhalla</strong> : The Aston Martin Valhalla is a sports car developed by British manufacturer Aston Martin in collaboration with Red Bull Racing.</a>
             </div>
         </div>   
        <footer>
-         <div class="text-bg-dark p-3">ⓒ 2023, "Copyright", "All right reserved</div>
+         <div class="text-bg-dark p-3" id="foot">ⓒ 2023, "Copyright", "All right reserved</div>
 
        </footer>
       
@@ -95,16 +151,23 @@
 
 
 
-<!-- JavaScript
-// html: <div id="car-description">기본 설명글</div>
 
-$("#car1-link").click(function(){
-  $("#car-description").text("재규어 E-TYPE (1963) 상세 설명입니다.");
-});
 
-$("#car2-link").click(function(){
-  $("#car-description").text("람보르기니 MIURA (1966) 상세 설명입니다.");
-}); -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- 1. 클릭할 버튼/링크 영역 -->
@@ -113,8 +176,8 @@ $("#car2-link").click(function(){
   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#car2-desc">Car 2</button>
 </div>
 
-<!-- 2. 바뀌어 나올 내용 영역 -->
+ 2. 바뀌어 나올 내용 영역 
 <!-- <div class="tab-content mt-3">
   <div class="tab-pane fade show active" id="car1-desc">재규어 E-TYPE에 대한 설명 내용입니다.</div>
   <div class="tab-pane fade" id="car2-desc">람보르기니 미우라에 대한 설명 내용입니다.</div>
-</div> -->
+</div> 
